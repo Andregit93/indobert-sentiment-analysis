@@ -1,11 +1,10 @@
 streamlit==1.34.0
-torch==2.5.1            # atau biarkan torch diambil otomatis
+transformers==4.41.1        # tanpa [sentencepiece]
+torch==2.5.1
 safetensors==0.4.2
-sentencepiece==0.1.99    # jika tokenizer SentencePiece
 google-api-python-client==2.126.0
 pandas
 numpy
 matplotlib
 seaborn
 wordcloud
-sentencepiece==0.1.99
