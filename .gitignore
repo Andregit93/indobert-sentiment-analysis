@@ -1,0 +1,25 @@
+# Ignore virtual environment
+final_project/
+
+# Abaikan semua isi folder model (termasuk .safetensors)
+Model_Indobert/model/
+!Model_Indobert/model/config.json     # jika perlu tetap menyertakan config.json
+
+# Abaikan semua file tokenizer
+Model_Indobert/tokenizer/
+!Model_Indobert/tokenizer/tokenizer_config.json
+!Model_Indobert/tokenizer/special_tokens_map.json
+!Model_Indobert/tokenizer/vocab.txt   # vocab biasanya diperlukan
+
+# Abaikan file confusion matrix
+Model_Indobert/confusion_matrix.*
+
+# Optional: abaikan semua file besar yang tidak ingin di-commit
+*.safetensors
+*.bin
+*.pt
+
+# Abaikan file sementara atau artefak training
+*.log
+*.ckpt
+*.tmp
